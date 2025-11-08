@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Mahasiswa oleh Muhammad Nizar - 2310010247</title>
+</head>
+
+<body>
+  <h1>Selamat datang di Web Muhammad Nizar</h1>
+  <table border="2">
+    <thead>
+      <tr>
+        <th>NO</th>
+        <th>NIM</th>
+        <th>Nama</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+      $no = 1;
+      foreach ($mahasiswa as $row) {
+      ?>
+        <tr>
+          <td><?= $no++; ?></td>
+          <td><?= $row->NIM; ?></td>
+          <td><?= $row->nama_mhs; ?></td>
+        </tr>
+      <?php
+      }
+      ?>
+    </tbody>
+  </table>
+</body>
+
+</html>
